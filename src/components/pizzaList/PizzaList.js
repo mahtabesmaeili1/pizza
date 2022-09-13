@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
-import { selectUser } from "../store/user/selectors";
-import { selectPizzas } from "../store/pizzas/selectors";
-import { toggleFavorites } from "../store/user/slice";
-import "./styles.scss";
+import { selectUser } from "../../store/user/selectors";
+import { selectPizzas } from "../../store/pizzas/selectors";
+import { toggleFavorites } from "../../store/user/slice";
+import "../styles.scss";
 export default function PizzaList() {
   const user = useSelector(selectUser);
   const pizzas = useSelector(selectPizzas);

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addPizza } from "../store/pizzas/slice";
+import { addPizza } from "../../store/pizzas/slice";
 
 const AddPizzaForm = () => {
   const [name, setName] = useState("");
